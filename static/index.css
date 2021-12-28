@@ -13,19 +13,19 @@ body {
     color: white;
 }
 
-.navbar {
+.navbarr {
     background-color: #263238;
     margin-left: auto;
     margin-right: auto;
     list-style-type: none;
 }
 
-.navbar_list {
+.navbarr_list {
     list-style-type: none;
     padding-left: 0px;
 }
 
-.navbar a {
+.navbarr a {
     float: left;
     width: 10em;
     color: white;
@@ -36,12 +36,12 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.navbar a:hover {
+.navbarr a:hover {
     background-color: grey;
     color: #0d47a1;
 }
 
-.navbar a.active {
+.navbarr a.active {
     background-color: #01579b;
     color: white;
 }

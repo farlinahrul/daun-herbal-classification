@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
 
-    <!-- Index CSS -->
-    <link href="/static/index.css" rel="stylesheet">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -17,15 +15,18 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- Index CSS -->
+    <link href="/static/index.css" rel="stylesheet">
+
     <title>Cats vs Dog Application</title>
     <h1 class="main_title">KLASIFIKASI DAUN HERBAL</h1>
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbarr">
         <ul style="display: flex; justify-content: center; align-items: center; list-style-type: none;">
             <li class="navbar_list">
-                <a href="/ann">ANN</a>
+                <a class="active" href="/ann">ANN</a>
             </li>
             <li class="navbar_list">
                 <a href="/cnn">CNN</a>
@@ -40,7 +41,6 @@
                 justify-center
                 items-center
                 h-screen
-                bg-red-200
             ">
         <main class="
                     flex flex-col
@@ -65,7 +65,7 @@
                         rounded-md
                     ">
                 <p class="text-center">
-                    Masukkan gambar gajah atau singa
+                    {{hasil}}
                 </p>
             </div>
             {% endif %} {% if prediction %}
@@ -79,6 +79,7 @@
                             border-8 border-gray-200
                             rounded-md
                             bg-gray-100
+                            text-black
                         " />
                 <button type="submit" class="p-4 bg-red-600 text-white rounded-md">
                     Prediksi Gambar

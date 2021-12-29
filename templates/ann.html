@@ -18,8 +18,8 @@
     <!-- Index CSS -->
     <link href="/static/index.css" rel="stylesheet">
 
-    <title>Cats vs Dog Application</title>
-    <h1 class="main_title">KLASIFIKASI DAUN HERBAL</h1>
+    <title>Herbal Leaves Classification App</title>
+    <h1 class="main_title"><a href="/" style="text-decoration: none; color:white;">KLASIFIKASI DAUN HERBAL</a></h1>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
             </li>
             <li class="navbar_list">
                 <a href="/about">About</a>
-            </li class="navbar_list">
+            </li>
         </ul>
     </nav>
     <section class="
@@ -50,7 +50,7 @@
                     bg-white
                     rounded-lg
                 ">
-            <h1 class="text-3xl text-bold">Cats vs Dog</h1>
+            <h1 class="text-3xl text-bold text-danger">Seledri Sirih Classification with ANN</h1>
 
             {% if uploaded_image %}
             <img src="{{ url_for('send_uploaded_image', filename=uploaded_image) }}" class="mt-8 mb-4 h-48 border-8 border-gray-200 rounded-md" /> {% else %}
